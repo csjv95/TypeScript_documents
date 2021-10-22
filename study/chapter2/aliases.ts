@@ -24,4 +24,6 @@
   let SjName: Name;
   // SjName = "Hello" x
   SjName = "SJ";
+
+  // 원시타입 객체타입 literal도 모두 타입을 정해놓을수 있다
 }
