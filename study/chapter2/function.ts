@@ -29,26 +29,27 @@
     });
   }
 
-// Optional parameter ? 전달하지않으면 undefined
-const printName = (firstName: string, lastName?: string): string => {
-  return `welcome to TS world ${firstName} ${lastName}`;
-};
+  // Optional parameter ? 전달하지않으면 undefined
+  const printName = (firstName: string, lastName?: string): string => {
+    return `welcome to TS world ${firstName} ${lastName}`;
+  };
 
-console.log(printName("Choi", "seokjin"));
-console.log(printName("coner"));
+  console.log(printName("Choi", "seokjin"));
+  console.log(printName("coner"));
 
-//Default parameter
-const printMessage = (message: string = `Can I get message?`): string => {
-  return message;
-};
+  //Default parameter
+  const printMessage = (message: string = `Can I get message?`): string => {
+    return message;
+  };
 
-console.log(printMessage());
-console.log(printMessage("Hello SJ"));
+  console.log(printMessage());
+  console.log(printMessage("Hello SJ"));
 
-// Rest parameter
+  // Rest parameter
 
-const addNums = (...num: number[]): number => {
-  return num.reduce((a, b) => a + b);
-};
+  const addNums = (...num: number[]): number => {
+    return num.reduce((a, b) => a + b);
+  };
 
-console.log(addNums(1, 2, 3));
+  console.log(addNums(1, 2, 3));
+}
