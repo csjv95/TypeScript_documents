@@ -3,10 +3,10 @@
 let's start TypeScript 
 
 ## What is TypeScript ?    
-TypeScript **MS**에서 2012년 10월경에 오픈 소스로 발표한 언어 입니다.   
-TypeScirpt는 어느 브라우저나 어떤 운영체제 또는 자바스크립트가 동작할수 있는 어떤 곳에서 대체해서 사용할수 있습니다.   
-TypeScript는 완전히 새로운 언어가 아닌 JS(JavaScript)를 베이스로 하는 언어입니다.   
-TypeScript는 JS에 **타입**을 부여한 언어입니다.   
+  - TypeScript **MS**에서 2012년 10월경에 오픈 소스로 발표한 언어 입니다.   
+  - TypeScirpt는 어느 브라우저나 어떤 운영체제 또는 자바스크립트가 동작할수 있는 어떤 곳에서 대체해서 사용할수 있습니다.   
+  - TypeScript는 완전히 새로운 언어가 아닌 JS(JavaScript)를 베이스로 하는 언어입니다.   
+  - TypeScript는 JS에 **타입**을 부여한 언어입니다.   
 
 
 ## Why should you use TypeScript?
