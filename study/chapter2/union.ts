@@ -1,4 +1,4 @@
-// Union Types: OR
+// Union Types: OR 발생할 수 있는 모든 케이스중에 한가지만 선택
 
 type Direction = "left" | "right" | "up" | "down";
 function move(direction: Direction) {
