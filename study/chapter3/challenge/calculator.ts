@@ -1,6 +1,5 @@
-/**
- * Let's make a calculator 🧮
- */
+// make a calculator 🧮
+
 type Type = "add" | "substract" | "multiply" | "divide" | "remainder";
 
 const calculate = (type: Type, x: number, y: number): number => {
@@ -16,7 +15,7 @@ const calculate = (type: Type, x: number, y: number): number => {
     case "remainder":
       return x % y;
     default:
-      throw Error(
+      throw new Error(
         `Sorry.. you can choose one "add","substract","multiply","divide","remainder"`
       );
   }
