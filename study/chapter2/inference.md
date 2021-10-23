@@ -1,6 +1,8 @@
-{
-  // type Inference
+# inference (추론)
 
+inference는 타입이 뭔지 명시하거나 값을 넣지 않아도 추론해서 적용 시켜준다
+
+```
   let text = "hello";
   console.log(text); // 타입을 명시하지 않아도 받은값의 결과를 추론하여서 자동적으로 넣어준다
 
@@ -14,4 +16,4 @@
   };
   const result = add(1, 100);
   console.log(result); // 함수의 타입을 정해놓지 않아 매개변수로 number타입을 받으니깐 결과도 number로 추론한다
-}
+```

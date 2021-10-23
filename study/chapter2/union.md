@@ -1,6 +1,8 @@
-{
-  // Union Types: OR 발생할 수 있는 모든 케이스중에 한가지만 선택
+# Union (OR)
 
+발생할 수 있는 모든 케이스중에 한가지만 선택
+
+```
   type Direction = "left" | "right" | "up" | "down";
   function move(direction: Direction) {
     console.log(direction);
@@ -20,10 +22,13 @@
   type FailState = {
     reason: string;
   };
+```
 
-  // Discriminated Union
-  // 어떤 케이스든 같은 프로퍼티를 작성하여 이용해서 공통적으로 쉽게 접근할 수 있게 만들어 준다
+## Discriminated Union
 
+어떤 케이스든 같은 프로퍼티를 작성하여 이용해서 공통적으로 쉽게 접근할 수 있게 만들어 준다
+
+```
   type isLogin = boolean;
 
   type successState = {
@@ -57,4 +62,5 @@
   };
 
   printLoginState(login());
-}
+
+```

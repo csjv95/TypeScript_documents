@@ -1,10 +1,13 @@
-{
-  /**
-   * JavaScript types
-   * Primitive: number, string, boolean, bigint, symbol, null, undefined
-   * Object: function, array,data,...
-   */
+# Basic
 
+## JS Type
+
+- Primitive: number, string, boolean, bigint, symbol, null, undefined
+- Object: function, array,data,...
+
+## TS 작성 방법
+
+```
   // number -도 가능
   const num: number = -6;
 
@@ -15,7 +18,7 @@
   const boal: boolean = false;
 
   // undefined
-  let name: undefined; // 💩 타입을 undefined로 정해놓으면 undefined로만 쓰여야된다
+  let name: undefined; //  타입을 undefined로 정해놓으면 undefined로만 쓰여야된다
   let age: number | undefined; // or 연산자를 이용하여 추가
   age = undefined;
   age = 1;
@@ -25,7 +28,7 @@
   }
 
   // null
-  let person: null; // 💩
+  let person: null; 💩
   let person2: string | null;
 
   // unknown 💩
@@ -57,4 +60,4 @@
   function acceptSomeObject(obj: object) {}
   acceptSomeObject({ name: "ellie" });
   acceptSomeObject({ animal: "dog" });
-}
+```
