@@ -13,7 +13,13 @@
     makeCoffee(shots: number): CoffeeCup;
   }
 
-  class CoffeeMachine implements CoffeeMaker {
+  interface CommercialCoffeeMaker {
+    makeCoffee(shots: number): CoffeeCup;
+    fillCoffeeBeans(beans: number): void;
+    clean(): void;
+  }
+
+  class CoffeeMachine implements CoffeeMaker, CommercialCoffeeMaker {
     private static BEANS_GRAM_PER_SHOT: number = 7;
     private coffeeBeans: number = 0;
 
@@ -25,7 +31,11 @@
       return new CoffeeMachine(coffeeBeans);
     };
 
-    fillCoffeeBeans = (beans: number) => {
+    clean() {
+      console.log(`cleaning ...`);
+    }
+
+    fillCoffeeBeans = (beans: number): number => {
       if (beans < 0) {
         throw new Error("value for beans should be greater than 0");
       }
@@ -64,7 +74,14 @@
   maker.fillCoffeeBeans(20);
   maker.makeCoffee(2);
 
+  // CoffeeMaker를 사용해서
   const maker2: CoffeeMaker = CoffeeMachine.makemachine(20);
   // maker2.fillCoffeeBeans(20) // 인터페이스에 등록이 안되있어서 사용 x
   maker2.makeCoffee(2);
+
+  // commercialCoffeemaker 를 사용해서
+  const maker3: CommercialCoffeeMaker = CoffeeMachine.makemachine(20);
+  maker3.fillCoffeeBeans(20);
+  maker3.makeCoffee(2);
+  maker3.clean();
 }
