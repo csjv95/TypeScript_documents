@@ -1,4 +1,5 @@
 {
+  // make coffee machine
   type CoffeeCup = {
     shots: number;
     hasMilk: boolean;

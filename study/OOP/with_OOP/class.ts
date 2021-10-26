@@ -1,4 +1,5 @@
 {
+  // Coffee machine class
   type CoffeeCup = {
     shots: number;
     hasMilk: boolean;
@@ -6,7 +7,7 @@
 
   class CoffeeMaker {
     static BEANS_GRAM_PER_SHOT: number = 7; // class level
-    coffeeBeans: number = 0;
+    coffeeBeans: number = 0; // instance(object) level
 
     constructor(coffeeBeans: number) {
       this.coffeeBeans = coffeeBeans;
