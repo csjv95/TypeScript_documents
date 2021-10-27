@@ -99,7 +99,7 @@
   // 또는 동일한 부모 클래스를 상속했을떄
   // 동일한 함수를 어떤 클래스인지 구별하지않고 공통된 apis를 호출할수 있습니다
 
-  const machines = [
+  const machines: CoffeeMaker[] = [
     new CoffeeMachine(20),
     new LatteMachine(20, "latte1"),
     new SweetCoffeeMachine(20),
