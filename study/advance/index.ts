@@ -1,6 +1,5 @@
 {
   // obj 값 접근하기
-
   const obj = {
     name: "jin",
   };
